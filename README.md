@@ -1,2 +1,3 @@
 # staff-portal
-Intended monorepo for staff-portal-server and staff-portal-client.
+
+Central hub for guides, help, and bug reporting regarding the Staff-Portal.
