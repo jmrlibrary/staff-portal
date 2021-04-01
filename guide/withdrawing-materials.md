@@ -36,9 +36,9 @@ They then press `[Submit]`. (If using a calibrated barcode scanner, the scanner 
 
 ![image](https://user-images.githubusercontent.com/39073287/113336114-e284e300-92f3-11eb-8d55-2aa48e6ac71e.png)
 
-After submitting a barcode, the user will be presented with a message in a table below the form. (The table is hidden if no barcode has been scanned during the current session).
+After submitting a barcode, the user will be presented with a message in a table below the form. (The table is hidden if no barcode has been scanned during the current session). Users should look here to see if their scan has been successful. Messages are added to the list from the top down, so the most recent messages will appear at the top.
 
-Users should look here to see if their scan has been successful. 
+At any time the user may click `[Clear messages]` to clear the accumulated messages.
 
 #### Successful scans
 
