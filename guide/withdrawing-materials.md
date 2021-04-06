@@ -14,7 +14,7 @@ The guide below is similarly partitioned, to make it easier for those with the r
 
 ## Basic User
 
-For a Basic User, the interface looks like this:
+For a Basic User, the interface looks like this. (If your interface does not have _at least_ these features, please contact the website administrator.)
 
 ![image](https://user-images.githubusercontent.com/39073287/113335536-127fb680-92f3-11eb-873e-b0b44b3b9f13.png)
 
@@ -63,7 +63,49 @@ The form and table on the right-hand column display information for items whose 
 After each scan, the table will refresh its contents automatically. The user may manually refresh the table without having to scan by clicking the `[Refresh]` button.
 
 ## SSP User
-*Coming soon*
+
+A user with SSP permissions should always be given Basic user permissions as well.
+
+The interface, in those cases, will appear as below, and include the following additional features:
+
+1. Preferences
+2. Clear all SSP / Select all SSP buttons
+3. An `ssp` checkbox for each scanned barcode item
+4. Selectable buttons displaying ISBNs for linked item records
+
+![image](https://user-images.githubusercontent.com/39073287/113773207-b900f880-96f3-11eb-8b3c-961deba06945.png)
+
+### Preferences widget
+
+![image](https://user-images.githubusercontent.com/39073287/113773563-2f9df600-96f4-11eb-9f6b-e41b5b11187e.png)
+
+The Preferences widget allows the user to choose:
+
+1. "Default value for sending to SSP: "
+  - The default value for the SSP checkbox when scanning an item. If this checkbox is checked, then all items which are henceforth scanned will by default be printed during any `csv` download using the Download button.
+  - Un-checking the checkbox only affects items scanned after that point; the SSP status of past items will not be affected.
+2. "Show detailed item info after scanning"
+  - The user may select whether or not the item information (similar to that provided in Sierra's item view) will appear after scanning a barcode.
+
+### [Clear all SSP] / [Select all SSP] buttons
+
+![image](https://user-images.githubusercontent.com/39073287/113774154-e69a7180-96f4-11eb-8f95-5302c1e36cb1.png)
+
+These buttons can be used to select or de-select all the SSP checkboxes on any item appearing in the table below those buttons.
+
+### SSP checkbox
+
+![image](https://user-images.githubusercontent.com/39073287/113774198-f023d980-96f4-11eb-891b-7d3af94ef4d8.png)
+
+The SSP checkbox in the SSP column determines which items are included in the exported `csv` file generated when clicking the [Download] button on the top right. 
+
+However, the value (Selected or Un-Selected) of this button in the database is saved only when initially scanning an item.
+
+### Selectable ISBN buttons
+
+![image](https://user-images.githubusercontent.com/39073287/113774562-6fb1a880-96f5-11eb-9226-acdab2e0d80f.png)
+
+When a scanned barcode appears on this table, a list of all ISBNs accompanies that information. These ISBNs meet certain criteria (13 or 10 digits long, and in the `020` or `028` marc fields, subfield `$a`). If there is more than one ISBN associated with the bib to which the item is attached, they will be presented as a vertical series of buttons. The ISBN button which is black is the one that will appear on the `csv` file downloaded using the `[Download]` button. Currently there is no way to select *no* ISBN if there is at least one valid ISBN.
 
 ## Superuser
 *Coming soon*
