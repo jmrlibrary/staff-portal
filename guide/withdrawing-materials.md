@@ -14,7 +14,7 @@ The guide below is similarly partitioned, to make it easier for those with the r
 
 ## Basic User
 
-For a Basic User, the interface looks like this. (If your interface does not have _at least_ these features, please contact the website administrator.)
+For a Basic User, the interface looks like this. (If your interface does not have _at least_ these features, it means that you do not have Basic User permissions, and need to request those permissions.)
 
 ![image](https://user-images.githubusercontent.com/39073287/113335536-127fb680-92f3-11eb-873e-b0b44b3b9f13.png)
 
